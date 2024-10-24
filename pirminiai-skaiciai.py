@@ -4,6 +4,12 @@
 import sys
 
 def arPirminis(skaicius):
+    if skaicius == 1:
+        return False
+    
+    for i in range(2, int(skaicius/2)+1):
+        if skaicius % i == 0:  # Condition inside loop
+            return False
     return True
 
 def ieskotiPirminiu(pradzia, pabaiga):
