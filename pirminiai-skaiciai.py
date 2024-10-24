@@ -40,9 +40,9 @@ skaicius_nuo = input("Iveskite intervalo pradzia: ")
 skaicius_nuo = patikrinti_skaiciu(skaicius_nuo)
 skaicius_iki = input("Iveskite intervalo pabaiga: ")
 skaicius_iki = patikrinti_skaiciu(skaicius_iki)
+print("Pirminiu skaiciu ieskoma intervale [" + str(skaicius_nuo) + ", " + str(skaicius_iki) + "]")
 if skaicius_nuo > skaicius_iki:
     tmp = skaicius_nuo
     skaicius_nuo = skaicius_iki
     skaicius_iki = tmp
 ieskotiPirminiu(skaicius_nuo, skaicius_iki)
-print("Pirminiu skaiciu ieskoma intervale [" + str(skaicius_nuo) + ", " + str(skaicius_iki) + "]")
