@@ -3,6 +3,13 @@
 
 import sys
 
+def arPirminis(skaicius):
+    return True
+
+def ieskotiPirminiu(pradzia, pabaiga):
+    for i in range(pradzia, pabaiga+1):
+        if(arPirminis(i)):
+            print(i)
 def paversti_i_skaiciu(ivestis):
     skaicius = None
     try:
@@ -31,5 +38,5 @@ if skaicius_nuo > skaicius_iki:
     tmp = skaicius_nuo
     skaicius_nuo = skaicius_iki
     skaicius_iki = tmp
+ieskotiPirminiu(skaicius_nuo, skaicius_iki)
 print("Pirminiu skaiciu ieskoma intervale [" + str(skaicius_nuo) + ", " + str(skaicius_iki) + "]")
-
