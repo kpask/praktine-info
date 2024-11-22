@@ -6,10 +6,11 @@
 ### 07 uzduotis
 Sukurta programa, randanti pirminius skaicius vartotojo pateiktame intervale. Programa veikia tik su sveikaisiais teigiamais skaiciais.
 
-- [x] Vartotojo ivesties surinkimas  
-- [x] Vartotojo ivesties pasirinkimas  
-- [x] Pirminiu skaiciu paieska  
-- [ ] Efektyvus pirminiu skaiciu algoritmas  
+1. Vartotojo ivesties surinkimas  
+1. Vartotojo ivesties pasirinkimas 
+1. Pirminiu skaiciu paieska  
+1. Efektyvus pirminiu skaiciu algoritmas  
+
 
 ### Programos paleidimas
 
@@ -30,11 +31,12 @@ $ python pirminiai-skaiciai.py
 ## 08 uzduotis  
 Sukurta programa, skaitanti tekstini faila, randanti dazniausiai pasikartojancius zodzius ir ilgiausia zodi faile.
 
-- [x] Failo nuskaitymas ir apdorojimas
-- [x] Zodziu filtravimas    
-- [x] 100 Dazniausiu zodziu nustatymas  
-- [x] Ilgiausio zodzio nustatymas  
-- [ ] Papildoma funkcionalumo optimizacija
+1. Failo nuskaitymas ir apdorojimas
+1. Zodziu filtravimas    
+1. 100 Dazniausiu zodziu nustatymas  
+1. Ilgiausio zodzio nustatymas  
+1. Papildoma funkcionalumo optimizacija
+
 
 ### Programos paleidimas  
 
