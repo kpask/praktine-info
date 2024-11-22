@@ -16,6 +16,7 @@ def pasalintiSkyrybosZenklus(eil):
     eil = eil.replace(';', ' ')
     eil = eil.replace(')', ' ')
     return eil
+
 #Atidaromas tekstinis failas, skaitom eilutes, kiekviena eilutes žodį dedame i masyva zodziai
 with open("Metai.txt", "r", encoding="utf8") as f:
     zodziai = []
@@ -23,11 +24,12 @@ with open("Metai.txt", "r", encoding="utf8") as f:
         eilute = pasalintiSkyrybosZenklus(eilute)
         eilute = eilute.strip().split(" ")
         zodziai += eilute
+        
 #Sukuriam kintamuosius ilgiausiui žodžiui ir filtruotiems žodžiams
 ilgiausias = ""
 atfiltruotiZodziai = []
 
-#Filtruojame visų žodžių masyvą
+#Filtruojame visų žodžių masyvą, randame ilgiausia zodi
 for zodis in zodziai:
     zodis = zodis.lower()
     #Jeigu žodis nėra tuščias ir susideda tik iš raidžių, dedame jį į mūsų filtsuotų žodžių masyvą
@@ -42,8 +44,11 @@ zodziuKiekis = Counter(atfiltruotiZodziai)
 #naudojame most_common, kuris paema 100 dažniausiai pasikartojusių žodžių iš zodžiųKiekis, tuple
 zodziaiDazniausi = zodziuKiekis.most_common(100)
 
-print("Ilgiausias žodis: " + ilgiausias)
-print("100 dažniausiai pasikartojančių žodžių:")
 #Spausdiname dažniausius žodžius, per nutylėjima zodis patampa tuple pirmoji dalis, kiekis patampa antroji dalis - kiekis
+print("100 dažniausiai pasikartojančių žodžių:")
+kelintas = 1
 for zodis, kiekis in zodziaiDazniausi:
-    print(f"{zodis:8}: {kiekis:3}")
+    print(f"{kelintas:3}.   {zodis:10} {kiekis:3}")
+    kelintas+=1
+    
+print("Ilgiausias žodis: " + ilgiausias)
