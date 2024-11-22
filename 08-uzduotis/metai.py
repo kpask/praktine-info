@@ -1,8 +1,28 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov 15 12:18:49 2024
+from collections import Counter
 
-@author: kapa1135
-"""
+def pasalintiSkyrybosZenklus(eil):
+    # Pravalome kablelius, kitus simbolius
+    eil = eil.replace(',', ' ')
+    eil = eil.replace('-', ' ')
+    eil = eil.replace('–', ' ')
+    eil = eil.replace('—', ' ')
+    eil = eil.replace('„', ' ')
+    eil = eil.replace('“', ' ')
+    eil = eil.replace('.', ' ')
+    eil = eil.replace('!', ' ')
+    eil = eil.replace(':', ' ')
+    eil = eil.replace('?', ' ')
+    eil = eil.replace('(', ' ')
+    eil = eil.replace(';', ' ')
+    eil = eil.replace(')', ' ')
+    return eil
 
+#Atidaromas tekstinis failas, skaitom eilutes, kiekviena eilutes žodį dedame i masyva zodziai
+with open("Metai.txt", "r", encoding="utf8") as f:
+    zodziai = []
+    for eilute in f:
+        eilute = pasalintiSkyrybosZenklus(eilute)
+        eilute = eilute.strip().split(" ")
+        zodziai += eilute
+
+print(zodziai)

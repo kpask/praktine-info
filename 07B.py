@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import math
+
 def arSveikasis(skaicius):
     if skaicius%1 != 0:
         print("Klaida 1. Ivestas skaicius nera sveikas.")
@@ -28,3 +28,8 @@ arSveikasis(posaknis)
 if(posaknis < 0 and laipsnis%2 == 0):
     print("Klaida 3.Posaknis negali buti mazesnis uz 0, jeigu laipsnis lyginis")
     sys.exit(0)
+
+if((posaknis ** (1/laipsnis))%1 == 0.0):
+    print("Ats: " + str((posaknis**(1/laipsnis)) * daugiklis))
+else:
+    print("Ats: %.0f√%.0f" % (daugiklis, posaknis))
