@@ -16,7 +16,6 @@ def pasalintiSkyrybosZenklus(eil):
     eil = eil.replace(';', ' ')
     eil = eil.replace(')', ' ')
     return eil
-
 #Atidaromas tekstinis failas, skaitom eilutes, kiekviena eilutes žodį dedame i masyva zodziai
 with open("Metai.txt", "r", encoding="utf8") as f:
     zodziai = []
@@ -24,5 +23,11 @@ with open("Metai.txt", "r", encoding="utf8") as f:
         eilute = pasalintiSkyrybosZenklus(eilute)
         eilute = eilute.strip().split(" ")
         zodziai += eilute
+        
+atfiltruotiZodziai = []
+for zodis in zodziai:
+    zodis = zodis.lower()
+    if len(zodis) > 0 and zodis.isalpha():
+        atfiltruotiZodziai.append(zodis)
 
-print(zodziai)
+print(atfiltruotiZodziai)
