@@ -26,3 +26,28 @@ Arba asmeniniame kompiuteryje su idiegtu Python interpretatoriumi:
 $ cd 07-uzduotis  
 $ python pirminiai-skaiciai.py  
 ```
+
+## 08 uzduotis  
+Sukurta programa, skaitanti tekstini faila, randanti dazniausiai pasikartojancius zodzius ir ilgiausia zodi faile.
+
+- [x] Failo nuskaitymas ir apdorojimas
+- [x] Zodziu filtravimas    
+- [x] 100 Dazniausiu zodziu nustatymas  
+- [x] Ilgiausio zodzio nustatymas  
+- [ ] Papildoma funkcionalumo optimizacija
+
+### Programos paleidimas  
+
+Programa gali buti paleidziama nueinant i programos kataloga su terminalu:  
+
+```bash
+$ cd 08-uzduotis  
+$ python3 metai.py  
+```
+
+Arba asmeniniame kompiuteryje su idiegtu Python interpretatoriumi:  
+
+```bash
+$ cd 08-uzduotis  
+$ python metai.py  
+```
