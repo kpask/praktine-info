@@ -23,11 +23,15 @@ with open("Metai.txt", "r", encoding="utf8") as f:
         eilute = pasalintiSkyrybosZenklus(eilute)
         eilute = eilute.strip().split(" ")
         zodziai += eilute
-        
+
+ilgiausias = ""
 atfiltruotiZodziai = []
 for zodis in zodziai:
     zodis = zodis.lower()
     if len(zodis) > 0 and zodis.isalpha():
         atfiltruotiZodziai.append(zodis)
+        if len(zodis) > len(ilgiausias):
+            ilgiausias = zodis
 
+print("ilgiausias žodis: " + ilgiausias)
 print(atfiltruotiZodziai)
