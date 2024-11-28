@@ -19,3 +19,8 @@ for eilute in f:
 
 #Braizome grafika
 matplotlib.pyplot.scatter(isleidimoMetai, tranzistoriuSkaiciai, label = "Tranzistoriu skaičius")
+matplotlib.pyplot.title("Mūro dėsnis")
+matplotlib.pyplot.xlabel("Išleidimo metai")
+matplotlib.pyplot.ylabel("Tranzistoriu skaičius")
+matplotlib.pyplot.yscale('log')
+matplotlib.pyplot.show()
